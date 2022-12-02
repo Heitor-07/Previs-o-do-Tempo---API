@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>O Tempo</title>
+</head>
+<body>
+
+     <header>
+        <input type="text" id="citySearch" placeholder="Digite o nome de uma cidade...">
+        <button type="submit" id="btn-search">
+            <i class="fa fa-search-location"></i>
+        </button>
+    </header>
+        
+    <section class="hoje">
+
+        <div class="info">
+            <div class="cidade">
+                <h2>
+                    O tempo agora em 
+                    <span class="TitleCity"></span>,
+                    <span class="country"></span>
+                </h2>
+            </div>
+
+            <div class="tempo">
+                <img src="" id="icon-img" alt="">
+                <p class="descTemperatura"><span></span>&deg;</p>
+            </div>
+
+            <p class="descricaoTempo"></p>
+
+            <div class="complementar">
+                <div class="vento">
+                    <p>Vento</p>
+                    <p class="descVento"></p>
+                </div>
+                <hr>
+                <div class="umidade">
+                    <p>Umidade</p>
+                    <p class="descUmidade"></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="messageError hide">
+        <p>Não encontramos uma cidade com esse nome!!!</p>
+    </div>
+
+    <div class="loading">
+        <img src="img/loading.gif" id="loading" alt="">
+    </div>
+   
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
